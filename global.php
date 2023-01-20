@@ -3,7 +3,10 @@ session_start();
 
 try {
     // Connecxion au serveur
-    $pdo = new PDO('mysql:host=localhost;dbname=onlineshopping', 'root');
+    $dsn = 'mysql:host=localhost;dbname=id20000431_onlineshopping';
+    $username = 'id20000431_romainpatureau';
+    $password = 'G~JHQ)XH4}l)l_{e';
+    $pdo = new PDO($dsn, $username, $password);
 } catch (PDOException $e) {
     die('Error: ' . $e->getMessage());
 }
